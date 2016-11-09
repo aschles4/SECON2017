@@ -27,14 +27,5 @@ The Arduino motion function needs the following information to function:
 2. Theta
 3. Rotation(speed)
 
-After the header, the characters `mo` for "move" will be sent followed by a space separation of the arguments passed to the move function. These numerical arguments will be the ASCII representation of the numbers to facilitate easier debugging. For example, to call Arduino's move() with speed=280, theta=45 and rotation=0 payload would look as follows:
-```
-mo 280 45 0
-```
-
-Since rotation can be negative, prepending a negative sign (-) to the final argument will constitute a negative rotation. E.g.,
-```
-mo 0 0 -150
-```
 ### NOTE:
 This README will be appended to as the project grows.
